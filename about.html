@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href=" index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+      </section>
+
+      <!-----about us content------>
+      <section class="about-us">
+        <div class="row">
+          <div class="about-col">
+            <h1>We are the world's top university</h1>
+            <p>The Eduford University  is a collegiate research university based in Nairobi. It is one of the largest universities in Kenya. Although its history as an educational institution dates back to 1956, it did not become an independent university until 1970. 
+            During the 2011 academic year, the university had 61,912 students, of whom 49,488 were undergraduates and 12,424 postgraduates. The university launched several policy frameworks and introduced self-funded enrollment to cope with the rising demand for higher education in Kenya.</p>
+        <a href=""class="hero-btn red-btn">EXPLORE NOW</a>
+          </div>
+          <div class="about-col">
+            <img src="images/about.jpg">
+          </div>
+        </div>
+      </section>
+
+
+
+
+        <!----Footer---->
+        <section class="footer">
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Trojan Limited</p>
+      </section>
+
+
+    <!-------JavaScript for small screen Toogle Menu----->
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200";
+  }
+
+</script>
+
+  </body>
+</html>

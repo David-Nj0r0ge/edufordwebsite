@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href=" index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+      </section>
+
+      <!-----Course------>
+      <section class="course">
+        <h1>Courses We Offer<h1>
+          <p>We offer a variety of courses at our institution.</p>
+
+          <div class="row">
+            <div class="course-col">
+            <h3>Diploma</h3>
+            <p>Admission to Diploma Courses will be based on any of the following minimum qualifications:
+KCSE mean grade C.
+KCSE mean grade C- or equivalent plus a Certificate
+An O’ level qualification with a minimum division III or equivalent
+An A’ level qualification with a minimum of two subsidiary passes or equivalent</p>
+            </div>
+            <div class="course-col">
+            <h3>Degree</h3>
+            <p>Admission to Bachelor’s Degree Programmes will be based on any one of the following minimum qualifications:
+KCSE mean grade C+ or equivalent
+KCSE mean grade C- or equivalent plus a Certificate and Diploma
+Level Division II or equivalent plus a Diploma
+Level Division III or equivalent plus a Certificate and Diploma
+Level Division III or equivalent plus a three-year Diploma from a recognized post-secondary Institution for admissions to Bachelor of Education
+Diploma from University of Nairobi or other recognized institutions and an aggregate of C in KCSE or equivalent</p>
+            </div>
+            <div class="course-col">
+            <h3>Post Graduate</h3>
+            <p>Doctor of Philosophy Degree: The applicants for the Doctor of Philosophy Degree should have a masters degree from the University of Nairobi or an equivalent qualification from institutions recognized by Senate. In addition, the applicants should submit a research proposal showing that they are capable of carrying out original research.
+            Masters Degree: Applicants for masters degree programmes should have a minimum of Upper Second Class Honours Degree in the relevant discipline from the University of Nairobi or Equivalent qualification from Institutions recognized by Senate. Persons with lower qualifications but with postgraduate diplomas after Bachelors' degrees are also considered for admission.</p>
+            </div>
+          </div>
+
+        </section>
+
+        <!-----Facilities----->
+
+        <section class="facilities">
+          <h1>Our Facilities</h1>
+          <p>We have world class facilities</p>
+
+          <div class="row">
+            <div class="facilities-col">
+              <img src="images/library.png">
+              <h3>World Class Library</h3>
+              <p>We have variety of books required to enable our learners acquire knowledge</p>
+            </div>
+            <div class="facilities-col">
+              <img src="images/basketball.png">
+              <h3>Excellent Play Grounds</h3>
+              <p>Sports and Games Department is responsible for provision of recreational and competitive sports for both students and the members of staff in the university. The services in the Department of Sports and Games are a concerted effort of the technical (Games tutors and Coaches) and the administrative staff, as well as the other stakeholders.</p>
+            </div>
+            <div class="facilities-col">
+              <img src="images/cafeteria.png">
+              <h3>Tasty and Healthy Food</h3>
+              <p>We have a rich menu that offers nutritious meals to our students. </p>
+            </div>
+          </div>
+
+        </section>
+
+          <!----Footer---->
+        <section class="footer">
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Trojan Limited</p>
+      </section>
+
+
+    <!-------JavaScript for small screen Toogle Menu----->
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200";
+  }
+
+</script>
+
+  </body>
+</html>
